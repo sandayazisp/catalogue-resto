@@ -1,0 +1,129 @@
+@media screen and (max-width: 460px) {     
+    .header_title{
+        margin: 0 2em;
+        font-size: 1.6em;
+    }
+    .hero_inner{
+        width: 80%;
+    }
+    .hero_title{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .hero_tagline{
+        font-size: 12px;
+    }
+    .latest_label{
+        font-size: 23px;
+    }
+    .post{
+        grid-template-columns: 1fr;
+    }
+    .hero{
+        background-size: cover;
+    }
+    .post-item_kota{
+        font-size: 12px;
+    }
+    .post-item_title a{
+        font-size: 17px;
+        min-width: 44px;
+        min-height: 44px;
+    }
+    .post-item_rating, .post-item_rate{
+        font-size: 15px;
+    }
+    .post-item_description{
+        font-size: 12px;
+        text-align: justify;
+        text-indent: 20px;
+        margin-top: 0;
+    }
+
+    .restaurant {
+        display: inline-block;        
+    }
+   
+    .restaurant .restaurant__title {
+        padding-bottom: 10px;
+    }
+
+    .restaurant .restaurant__info{
+        display: inline-block;
+    }
+   
+    .restaurant .restaurant__overview {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    footer p{
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (min-width: 460px) {
+    .post{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .post-item_description{
+        text-align: justify;
+        text-indent: 20px;
+    }
+
+    
+
+}
+@media screen and (max-width: 600px){
+    .hero{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.651),rgba(0, 0, 0, 0.555)) , url("../public/images/hero-image_4.jpg");
+    }
+}
+
+@media screen and (min-width: 632px) {
+    #hamburger {
+        display: none;
+    }
+    .nav a.closebtn{
+        display: none;
+    }
+
+    #drawer {
+        position: relative;
+        transform: translate(0,0);
+    }   
+   
+    .restaurant .restaurant__title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-top: 20px;
+    }
+   
+    .restaurant .restaurant__overview, .restaurant .restaurant__komentar{
+        grid-column-start: 1;
+        grid-column-end: 3;        
+    }
+
+}
+
+@media screen and (min-width: 780px) {
+    .post{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .post-item_description{
+        text-align: justify;
+        text-indent: 20px;
+    }
+}
+@media screen and (min-width: 850px) {
+    .hero{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.651),rgba(0, 0, 0, 0.555)) , url("../public/images/hero-image_4.jpg");
+    }
+  }
+@media screen and (min-width: 1200px) {
+    main{
+        max-width: 1200px;
+    }   
+}
